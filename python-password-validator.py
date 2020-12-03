@@ -1,8 +1,13 @@
-##For loop
 digit_count = 0
 alpha_count = 0
 char_count = 0
 lower_count = 0
+
+#we can change password strength requirement here..!
+required_digit_count = 5
+required_alpha_count = 2
+required_char_count = 4
+required_lower_count = 2
 
 uname = input('Enter your username: ')
 
@@ -28,7 +33,7 @@ for w in str(word):
 
 
 
-if digit_count >= 3 and alpha_count >= 2 and char_count >= 4 and lower_count >= 2 :
+if digit_count >= required_digit_count and alpha_count >= required_alpha_count and char_count >= required_char_count and lower_count >= required_lower_count :
 
   print ('The password is successfully added for',uname)
 
